@@ -1,3 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); */
+/*  */
+
+
 :root {
     --mainColor: #eaeaea;
     --secondaryColor: #fff;
@@ -22,6 +26,8 @@ h5,
 h6,
 strong {
     color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
 }
 
 p,
@@ -31,6 +37,7 @@ label,
 input,
 textarea {
     color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
 
 }
 
@@ -85,6 +92,92 @@ h6 {
     margin: 0 auto;
 }
 
+.greeting-wrapper {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
+}
+
+.intro-wrapper {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas:
+        'navwrap navwrap'
+        'leftwrap rightwrap'
+    ;
+}
+
+
+.nav-wrapper {
+    border-radius: 5px 5px 0 0;
+    grid-area: navwrap;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+
+}
+
+#navigation {
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dots-wrapper {
+    display: flex;
+    padding: 10px;
+}
+
+.browser-dot {
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
+}
+
+#dot-1 {
+    background-color: #FC6058;
+}
+
+#dot-2 {
+    background-color: #FEC02F;
+}
+
+#dot-3 {
+    background-color: #2AcA3e;
+}
+
+.left-column {
+    grid-area: leftwrap;
+
+}
+
+.right-column {
+    grid-area: rightwrap;
+}
 
 @media screen and (max-width: 1200px) {
     .main-container {
