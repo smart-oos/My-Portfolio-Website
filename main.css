@@ -174,6 +174,8 @@ h6 {
 
 .left-column {
     grid-area: leftwrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
@@ -199,7 +201,7 @@ h6 {
     border-radius: 50%;
 
     margin: 5px;
-    border: 2px solid var(--themeDotBorder);
+    border: 2.5px solid var(--themeDotBorder);
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0,
             0.75);
@@ -207,6 +209,34 @@ h6 {
     box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     cursor: pointer;
 }   
+
+.theme-dot:hover{
+    border-width: 5px; 
+}
+
+/* hover effect color start begins here */
+#light-mode{
+    background-color: #fff;
+}
+
+#blue-mode {
+    background-color: #192734;
+}
+
+#green-mode {
+    background-color: #78866b;
+}
+
+#purple-mode {
+    background-color: #7e4c74;
+}
+/* end of hover effect style */
+
+#setting-notes{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
 
 .right-column {
     grid-area: rightwrap;
