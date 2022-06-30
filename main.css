@@ -238,9 +238,12 @@ h6 {
     text-align: center;
 }
 
+/* right column start here */
 .right-column {
     grid-area: rightwrap;
 }
+
+
 
 @media screen and (max-width: 1200px) {
     .main-container {
