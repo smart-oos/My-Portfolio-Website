@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1, minimum-scale=1 />
 
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
@@ -14,6 +14,13 @@
         rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="main.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="blue.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="purple.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="green.css">
+
 </head>
 
 <body>
@@ -33,7 +40,7 @@
 
                     <!-- navigation contact link -->
                     <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact">Contact</a></li>
                     </ul>
 
                 </div>
@@ -141,7 +148,7 @@
                         <div class="post-preview">
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">Lorem ipsum dolor sit.Some more texts.</p>
-                            <a href="#">Read More</a>
+                            <a href="post.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +160,7 @@
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">Lorem ipsum dolor sit amet.
                                 Lorem ipsum dolor.</p>
-                            <a href="#">Read More</a>
+                            <a href="post.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +172,7 @@
                             <h6 class="post-title">Post Title</h6>
                             <p class="post-intro">Lorem ipsum dolor sit amet.
                                 Lorem ipsum dolor.</p>
-                            <a href="#">Read More</a>
+                            <a href="post.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +183,7 @@
     <!--post section ends-->
 
     <section class="s2">
-        <div class="main-container">
+        <div class="main-container" href="contact">
             <h3 style="text-align: center;">Get In Touch</h3>
 
             <form id="contact-form" action="">
@@ -184,7 +191,7 @@
                 <input class="input-field" type="text" name="name" placeholder="Your name">
 
                 <label for="Subject">Subject</label>
-                <input class="input-field" type="text" name="subject" placeholder="Theme of your message for us">
+                <input class="input-field" type="text" name="subject" placeholder="Subject of your message">
 
                 <label for="email">Email</label>
                 <input class="input-field" type="text" name="email" placeholder="Your email">
@@ -199,6 +206,7 @@
     </section>
     <!--second section ends-->
 
+    <script type="text/JavaScript" src="script.js"></script>
 
 </body>
 
