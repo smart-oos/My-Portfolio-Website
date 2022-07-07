@@ -18,13 +18,17 @@
 
 
     --buttonColor: black;
-    --buttonColorHover: #eaeaea;
+    --buttonColorHover: #463d3d;
 }
 
 html,
 body {
     padding: 0;
     margin: 0;
+}
+
+body *{
+    transition: 0.35s;
 }
 
 h1,
